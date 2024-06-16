@@ -1,0 +1,11 @@
+systemctl que es parte de systemd, el sistema de inicialización y gestor de servicios usado en muchas distribuciones modernas de Linux. El comando que necesitas es:
+
+
+sudo systemctl list-units --type=service --state=active
+Este comando hace lo siguiente:
+
+sudo: Ejecuta el comando con privilegios de superusuario.
+systemctl: El comando para interactuar con systemd.
+list-units: Lista las unidades administradas por systemd.
+--type=service: Filtra la lista para mostrar solo los servicios.
+--state=active: Muestra solo los servicios que están activos.

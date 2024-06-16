@@ -1,0 +1,5 @@
+- Comando para añadir un usuario a linux de manera general
+
+
+sudo useradd -s /bin/sh juan
+sudo passwd juan

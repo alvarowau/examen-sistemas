@@ -1,0 +1,53 @@
+Teoría
+Tipos de redes
+LAN (Local Area Network): Red de área local.
+PAN (Personal Area Network): Red de área personal.
+WAN (Wide Area Network): Red de área amplia.
+Correspondencia entre los modelos TCP/IP y OSI
+Modelo OSI:
+
+Capa 7: Aplicación
+Capa 6: Presentación
+Capa 5: Sesión
+Capa 4: Transporte
+Capa 3: Red
+Capa 2: Enlace de Datos
+Capa 1: Física
+Modelo TCP/IP:
+
+Capa 4: Aplicación (corresponde a las capas de Aplicación, Presentación y Sesión del modelo OSI)
+Capa 3: Transporte (corresponde a la capa de Transporte del modelo OSI)
+Capa 2: Internet (corresponde a la capa de Red del modelo OSI)
+Capa 1: Acceso a la Red (corresponde a las capas de Enlace de Datos y Física del modelo OSI)
+Ejercicio de Subredes
+Para dividir una red en subredes para los diferentes departamentos de una empresa, necesitamos calcular las subredes apropiadas. Supongamos que tenemos una red de clase C con la dirección IP 192.168.1.0/24.
+
+Dep 1 - 100 equipos
+
+Necesita: 100 direcciones IP
+Subred: /25 (128 direcciones posibles)
+Rango de IPs: 192.168.1.0 - 192.168.1.127
+Dep 2 - 90 equipos
+
+Necesita: 90 direcciones IP
+Subred: /25 (128 direcciones posibles)
+Rango de IPs: 192.168.1.128 - 192.168.1.255
+Dep 3 - 15 equipos
+
+Necesita: 15 direcciones IP
+Subred: /28 (16 direcciones posibles)
+Rango de IPs: 192.168.1.192 - 192.168.1.207
+Resumen de Subredes
+Dep 1:
+
+Rango de IPs: 192.168.1.0 - 192.168.1.127
+Subred: /25
+Dep 2:
+
+Rango de IPs: 192.168.1.128 - 192.168.1.191
+Subred: /26 (para un máximo de 62 hosts)
+Dep 3:
+
+Rango de IPs: 192.168.1.192 - 192.168.1.207
+Subred: /28
+Estos ajustes aseguran que cada departamento tiene suficientes direcciones IP sin sobrepasar el rango de la red inicial.
